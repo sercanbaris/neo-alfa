@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+
+    --alfaBlue: #4654A3;
+    --alfaOrange: #F95B3D;
+    --alfaBg: #270949;
+}

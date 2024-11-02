@@ -1,0 +1,17 @@
+.tanitim {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+
+    .tanitim {
+
+        height: 100%;
+    }
+
+    .videosu {
+        width: 100%;
+    }
+}

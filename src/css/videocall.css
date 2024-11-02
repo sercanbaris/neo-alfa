@@ -1,0 +1,59 @@
+.videocall {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../media/win.jpg');
+    background-size: cover;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.videoTitle {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to right, #30CFD0, #c43ad6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: autoShowAnimation;
+    animation-timeline: view();
+    font-size: 6vw;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+.videoTexts {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.videoText {
+    display: flex;
+    text-align: left;
+    font-weight: 300;
+    font-size: 1.2vw;
+    margin-top: 20px;
+    color: white;
+    font-weight: 100 !important;
+    width: 90%;
+
+}
+
+
+@media (max-width: 768px) {
+    .videoTitle {
+        font-size: 10vw;
+    }
+
+    .videoText {
+        font-size: 4vw;
+    }
+}

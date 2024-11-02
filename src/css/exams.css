@@ -1,0 +1,121 @@
+.exams {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 50px;
+    animation: autoShowAnimation;
+    animation-timeline: view();
+}
+
+.examsTitle {
+    display: flex;
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--alfaOrange);
+    justify-content: center;
+
+}
+
+.examsDecs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.exam {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    width: 80%;
+}
+
+.examTitle {
+    display: flex;
+    font-weight: 700;
+}
+
+.examDesc {
+    display: flex;
+}
+
+.examsLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(185, 185, 185);
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 5px;
+    transition: 0.3s ease;
+    margin-top: 30px;
+}
+
+.brand:hover {
+    border: 2px solid var(--alfaOrange);
+}
+
+.brandPic {
+    display: flex;
+    width: 190px;
+}
+
+.brandtext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .exams {
+
+        padding: 20px;
+        height: 100%;
+    }
+
+    .exam {
+
+        width: 100%;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .examsLogo {
+
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .brand {
+
+        flex-wrap: wrap;
+        width: 170px;
+        height: 170px;
+
+    }
+
+    .brandPic {
+        flex-wrap: wrap;
+        width: 160px;
+    }
+}

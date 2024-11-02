@@ -1,0 +1,80 @@
+.warrant {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 7vw;
+    font-weight: 700;
+    margin: 0;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../media/win.jpg');
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    color: rgb(132, 132, 132);
+    padding: 50px;
+}
+
+.warrantTitle {
+    background: linear-gradient(to right, #30CFD0, #c43ad6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: autoShowAnimation;
+    animation-timeline: view();
+}
+
+@keyframes autoShowAnimation {
+    from {
+        opacity: 0.5;
+        transform: translateY(0px)scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+.warrantCert {
+    color: #30CFD0;
+    background: linear-gradient(to right, #30CFD0, #c43ad6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.maddeler {
+    animation: autoShowAnimation;
+    animation-timeline: view();
+}
+
+.madde {
+    text-align: left;
+    font-weight: 300;
+    font-size: 1.5vw;
+    margin-top: 20px;
+    color: white;
+    font-weight: 100 !important;
+}
+
+.check {
+    color: #30CFD0;
+}
+
+@media (max-width: 768px) {
+
+    .warrantTitle {
+        font-size: 16vw;
+    }
+
+    .warrant {
+        font-size: 10vw;
+        padding: 20px;
+    }
+
+    .madde {
+        font-size: 4vw;
+    }
+}
